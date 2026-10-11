@@ -1244,6 +1244,51 @@ form button {
         padding: 0 18px 116px;
     }
 
+    .section.cards {
+        width: auto;
+        max-width: none;
+        margin: 32px -10px 0;
+        padding: 8px;
+    }
+
+    .cards-container {
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: clamp(4px, 1.5vw, 8px);
+    }
+
+    .card {
+        min-width: 0;
+        padding: clamp(6px, 2vw, 9px);
+    }
+
+    .card h2 {
+        min-height: 3.2em;
+        margin-bottom: 8px;
+        font-size: clamp(0.72rem, 3.4vw, 0.95rem);
+        overflow-wrap: anywhere;
+    }
+
+    .card img {
+        width: 100%;
+        height: clamp(100px, 28vw, 130px);
+        object-fit: contain;
+    }
+
+    .card .cart-product-price {
+        font-size: clamp(0.65rem, 2.8vw, 0.8rem);
+        overflow-wrap: anywhere;
+    }
+
+    .card .cart-add {
+        width: 100%;
+        min-width: 0;
+        padding: 6px 3px;
+        font-size: clamp(0.62rem, 2.8vw, 0.78rem);
+        overflow-wrap: anywhere;
+    }
+
     #themeBtn {
         top: 14px;
         left: 14px;
